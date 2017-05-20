@@ -7,12 +7,12 @@ module Admin
 
     private
 
-      def scoreboard_params
-        params.permit(:contest_id, :logged_in)
-      end
+    def scoreboard_params
+      params.permit(:contest_id, :logged_in)
+    end
 
-      def active_teams
-        ActiveTeamsService.new(contest: @contest, teams: @contest.teams).call
-      end
+    def active_teams
+      ActiveTeamsService.new(contest: @contest, teams: @contest.teams).call
+    end
   end
 end

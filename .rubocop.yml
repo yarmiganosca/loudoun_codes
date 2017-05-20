@@ -17,6 +17,9 @@ Style/StringLiterals:
 Style/BracesAroundHashParameters:
   Enabled: false
 
+Style/IndentationConsistency:
+  EnforcedStyle: normal
+
 Metrics/LineLength:
   Max: 120
   AllowHereDoc: true
